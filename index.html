@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Of Heart!</title>
+<!-- Load the variable font stylesheet -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<!-- Meta tags for responsive web -->
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Your Website Name">
+<meta name="application-name" content="Your Website Name">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="path/to/your/tile/icon.png">
+<meta name="msapplication-config" content="path/to/your/browserconfig.xml">
+<meta name="msapplication-tooltip" content="Tooltip text">
+<meta name="msapplication-TileText" content="Tile text">
+<meta name="description" content="Brief description of your website">
+<meta name="keywords" content="keyword1, keyword2">
+<meta property="og:title" content="Your Website Name">
+<meta property="og:description" content="Brief description of your website">
+<meta property="og:image" content="path/to/your/image.jpg">
+<meta property="og:url" content="https://example.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Your Website Name">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Website Name">
+<meta name="twitter:description" content="Brief description of your website">
+<meta name="twitter:image" content="path/to/your/image.jpg">
+<meta name="twitter:url" content="https://example.com">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Kaushan Script', cursive;
+    transition: background-color 0.5s, color 0.5s;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+  }
+  .next-page-icon,
+  .toggle-icon {
+    width: 10vw;
+    height: 10vw;
+    max-width: 150px;
+    max-height: 150px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .website-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  .icon-group {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* Adjust as needed */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Website name -->
+  <div class="website-name">Your Website Name</div>
+  <!-- Icon group -->
+  <div class="icon-group">
+    <!-- Toggle button icon -->
+    <span class="material-symbols-outlined toggle-icon" onclick="toggleTheme(this)">&#xe9f5;</span>
+    <!-- Home icon linked to next page -->
+    <a href="newpage.html">
+      <!-- Insert Google's web icon SVG -->
+      <span class="material-symbols-outlined next-page-icon">
+        home
+      </span>
+      <!-- End of SVG -->
+    </a>
+  </div>
+</div>
+<script>
+function toggleTheme(icon) {
+  var body = document.body;
+  var websiteName = document.querySelector('.website-name');
+  var homeIcon = document.querySelector('.next-page-icon');
+
+  // Toggle background color
+  if (body.style.backgroundColor === 'rgb(255, 255, 255)') {
+    body.style.backgroundColor = '#000';
+    websiteName.style.color = '#fff';
+    icon.style.color = 'blue'; // Change toggle icon color to blue
+    homeIcon.style.color = '#fff'; // Change home icon color
+  } else {
+    body.style.backgroundColor = '#fff';
+    websiteName.style.color = '#000';
+    icon.style.color = 'red'; // Change toggle icon color to red
+    homeIcon.style.color = '#000'; // Change home icon color
+  }
+}
+</script>
+</body>
+</html>

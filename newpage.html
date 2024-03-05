@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calligraphy Blog</title>
+<!-- Meta tags for responsive web -->
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Your Website Name">
+<meta name="application-name" content="Your Website Name">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="path/to/your/tile/icon.png">
+<meta name="msapplication-config" content="path/to/your/browserconfig.xml">
+<meta name="msapplication-tooltip" content="Tooltip text">
+<meta name="msapplication-TileText" content="Tile text">
+<meta name="description" content="Brief description of your website">
+<meta name="keywords" content="keyword1, keyword2">
+<meta property="og:title" content="Your Website Name">
+<meta property="og:description" content="Brief description of your website">
+<meta property="og:image" content="path/to/your/image.jpg">
+<meta property="og:url" content="https://example.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Your Website Name">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Website Name">
+<meta name="twitter:description" content="Brief description of your website">
+<meta name="twitter:image" content="path/to/your/image.jpg">
+<meta name="twitter:url" content="https://example.com">
+<!-- Load the variable font stylesheet -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&display=swap">
+<!-- Load the Material Symbols Outlined font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<style>
+  body {
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #f9f9f9; /* Default background color */
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+  }
+  h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  /* Toggle icon styles */
+  .toggle-icon {
+    font-size: 36px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: red; /* Default color for toggle */
+  }
+  /* Switch icons styles */
+  .switch-icon {
+    font-size: 36px;
+    position: fixed;
+    cursor: pointer;
+  }
+  .switch-left {
+    bottom: 20px;
+    left: 20px;
+  }
+  .switch-right {
+    bottom: 20px;
+    right: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Exploring the Beauty of Calligraphy</h1>
+  <p><strong>1. Strokes:</strong></p>
+  <p>Calligraphy, with its rich history and diverse styles, is often defined by the intricate strokes that bring letters to life. Each stroke is a deliberate movement, carefully crafted to convey meaning and emotion. From delicate hairlines to bold downstrokes, mastering calligraphy strokes requires precision, control, and artistic flair.</p>
+  
+  <p><strong>2. Patterns:</strong></p>
+  <p>Patterns play a vital role in calligraphy, adding depth, texture, and visual interest to lettering artwork. Whether it's intricate flourishes, graceful loops, or decorative swirls, patterns enhance the beauty and elegance of calligraphic designs. By mastering pattern techniques, calligraphers can create captivating compositions that captivate the eye and inspire the soul.</p>
+  
+  <p><strong>3. Designs:</strong></p>
+  <p>Calligraphy designs encompass the arrangement and composition of letterforms, patterns, and decorative elements to create visually stunning artworks. From elegant wedding invitations to ornate certificates, calligraphic designs showcase the beauty of handwritten lettering in various contexts. With careful attention to detail and creative expression, calligraphers can transform words into works of art that leave a lasting impression.</p>
+  
+  <p><strong>4. Art:</strong></p>
+  <p>At its core, calligraphy is a form of artistic expression, allowing individuals to convey thoughts, emotions, and ideas through the beauty of handwritten letters. From traditional scripts to modern styles, calligraphic art encompasses a wide range of techniques and approaches, each with its unique aesthetic and appeal. Whether creating personalized gifts, custom signage, or gallery-worthy masterpieces, calligraphers use their skills to inspire, uplift, and connect with others.</p>
+</div>
+<!-- Toggle icon -->
+<span class="material-symbols-outlined toggle-icon" onclick="toggleBackground()">toggle_on</span>
+<!-- Switch icons -->
+<a href="index.html"><span class="material-symbols-outlined switch-icon switch-left">switch_left</span></a>
+<a href="C:\Users\dell\Desktop\webvs\newpage2.html"><span class="material-symbols-outlined switch-icon switch-right">switch_right</span></a>
+<script>
+function toggleBackground() {
+  var body = document.body;
+  var toggleIcon = document.querySelector('.toggle-icon');
+  
+  if (body.style.backgroundColor === 'rgb(249, 249, 249)') {
+    body.style.backgroundColor = '#333'; // Change background to black
+    body.style.color = '#fff'; // Change text color to white
+    toggleIcon.innerHTML = 'toggle_off'; // Change icon to toggle_off
+    toggleIcon.style.color = 'blue'; // Set toggle color to blue
+  } else {
+    body.style.backgroundColor = '#f9f9f9'; // Change background to white
+    body.style.color = '#333'; // Change text color to default
+    toggleIcon.innerHTML = 'toggle_on'; // Change icon to toggle_on
+    toggleIcon.style.color = 'red'; // Set toggle color to red
+  }
+}
+</script>
+</body>
+</html>
